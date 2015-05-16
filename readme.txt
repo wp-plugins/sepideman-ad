@@ -54,6 +54,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
+= 1.0.2 =
+* رفع مشکل عدم نمایش کد کوتاه
+
 = 1.0.1 =
 * رفع مشکل ایجاد رنگ در تمام منطقه پیشخوان
 
@@ -61,6 +64,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * انتشار افزونه
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* رفع مشکل عدم نمایش کد کوتاه
 
 = 1.0.1 =
 * رفع مشکل ایجاد رنگ در تمام منطقه پیشخوان

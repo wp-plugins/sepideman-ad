@@ -5,11 +5,6 @@ jQuery(function() {
 		});
 });
 
-jQuery('h3').on( 'click', function(){
-	jQuery( 'h3' ).css({ 'background-color' : '#1ec888'  });
-	jQuery( this ).css({ 'background-color' : '#1ec808'  });
-})
-
 function mode(mode){
 	var short = jQuery('#shortcode').val('[sepideman_ad mode="' + mode + '"]');
 }
