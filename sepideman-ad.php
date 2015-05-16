@@ -3,7 +3,7 @@
  * Plugin Name: تبلیغات سپیدمان
  * Plugin URI: http://plugins.sepideman.com/sepideman-ad
  * Description: افزونه تبلیغات کلیکی سپیدمان برای شبکه تبلیغاتی anetwork
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: زرتشت سپیدمان
  * Author URI: http://www.ZartoshtSepideman.com
  * License: GPLv2
@@ -23,10 +23,13 @@ function register_sepideman_ad_settings(){
 	register_setting( 'sp-ad-settings', 'aduser', intval );
 }
 
-function jqueri_accordion(){
+function jqueri_accordion($hook){
+    if ( 'sepideman-ad.php' != $hook ) {
+        return;
+    }
 	wp_enqueue_script( 'jquery-ui-accordion' );
-	wp_register_script('accordion_script', plugins_url( 'sepideman-ad/js/admin.js' ), array('jquery'),'1', true);
-	wp_enqueue_script('accordion_script');
+	wp_register_script( 'accordion_script', plugins_url( 'sepideman-ad/js/admin.js' ), array('jquery'),'1', true);
+	wp_enqueue_script( 'accordion_script' );
 }
 add_action( 'admin_enqueue_scripts', 'jqueri_accordion' );
 
